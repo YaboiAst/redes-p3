@@ -3,6 +3,7 @@ from iputils import *
 
 IPV4_HEADER_DEF_SIZE = 20
 
+
 def disable_nbits(orig_data, nbits):
     strBits = bin(orig_data)[2:]
     newLista = [int(bit) if i < len(strBits) - nbits else 0 for i, bit in enumerate(strBits)]
